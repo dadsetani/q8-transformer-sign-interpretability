@@ -4,7 +4,17 @@
 
 ## Upload instructions
 
-Upload **the contents of this ZIP to the root of the existing repository**, not the ZIP itself. Keep the existing `model_extracted.py`, `checkpoint_and_config.zip`, and `validation_data.zip` in the same root folder. Do not delete or overwrite existing files. The new scripts import `model_extracted.py` and the first three scripts open the two ZIPs by relative path.
+Upload the **`robustness_checks/` folder** into the root of the existing repository. Do not upload the ZIP itself. The original repository root must already contain `model_extracted.py`, `checkpoint_and_config.zip`, and `validation_data.zip`. Scripts import the model from the repository root and read the existing ZIP archives there. They write validation-control results inside `robustness_checks/`.
+
+Run from the repository root:
+
+```bash
+python robustness_checks/run_matched_donor_control.py
+python robustness_checks/run_factorial_donor_control.py
+python robustness_checks/run_permutation_control.py
+```
+
+**Verification:** Scripts passed Python syntax checks. Execution against the full original repository, its archives, and checkpoints has **not** been verified in this package. Do not claim full end-to-end reproducibility until those runs succeed.
 
 ## Included controls and outputs
 
@@ -22,9 +32,9 @@ The first three result files were produced using the original conditional-head m
 Requires Python, NumPy and PyTorch. From the repository root:
 
 ```bash
-python run_matched_donor_control.py
-python run_factorial_donor_control.py
-python run_permutation_control.py
+python robustness_checks/run_matched_donor_control.py
+python robustness_checks/run_factorial_donor_control.py
+python robustness_checks/run_permutation_control.py
 ```
 
 These scripts overwrite their own named JSON/NPZ result files on rerun; use a clean checkout if preserving prior output is necessary.
@@ -34,7 +44,7 @@ These scripts overwrite their own named JSON/NPZ result files on rerun; use a cl
 `run_loss_weight_control.py` requires the **original** `q8_pilot_backup_20261005_102000.zip` training archive, which is intentionally **not** bundled here. It verifies the original archive and the train/validation split hashes and does not open `test.npz`.
 
 ```bash
-python run_loss_weight_control.py --archive /path/to/q8_pilot_backup_20261005_102000.zip --epochs 200 --out loss_weight_control_results
+python robustness_checks/run_loss_weight_control.py --archive /path/to/q8_pilot_backup_20261005_102000.zip --epochs 200 --out loss_weight_control_results
 ```
 
 For the completed Kaggle run, upload these files from `/kaggle/working/q8_loss_control_results/` into a GitHub folder named `loss_weight_control_results/`:
