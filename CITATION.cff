@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and this software artifact."
+title: "Position-Dependent Sign Readout and MLP-Mediated Control in a Transformer Trained on the Quaternion Group"
+type: software
+authors:
+  - family-names: "Dadsetani"
+    given-names: "M.K."
+    affiliation: "Department of Computer, Faculty of Engineering, Shahed University, Tehran, Iran"
+    email: "m.dadsetani@shahed.ac.ir"
+  - family-names: "Javadi"
+    given-names: "Hamid H.S."
+    affiliation: "Department of Computer, Faculty of Engineering, Shahed University, Tehran, Iran"
+    email: "h.s.javadi@shahed.ac.ir"

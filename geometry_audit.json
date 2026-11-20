@@ -1,0 +1,37 @@
+{
+  "source": "saved validation_activations.npz",
+  "pairs": 512,
+  "positions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "mean_paired_euclidean_distance": [
+    11.267873764038086,
+    17.093170166015625,
+    15.830512046813965,
+    13.446850776672363,
+    12.133943557739258,
+    9.723349571228027,
+    4.727638244628906,
+    2.9215505123138428,
+    2.5702974796295166,
+    2.4927380084991455,
+    2.4413950443267822,
+    2.4456446170806885,
+    2.5290613174438477
+  ],
+  "sign_direction_not_recomputed": true,
+  "causal_interventions_not_recomputed": true,
+  "test_split_opened": false
+}

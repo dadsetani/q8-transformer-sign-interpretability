@@ -1,0 +1,22 @@
+{
+  "decomposition_audit.json": "364f9f0b7c5f721bb0bf0c5ab2d0bf84da28c5dfaf9f7ff76ccf2579861d4838",
+  "intervention_bootstrap_arrays.npz": "a2443cebbe80dfa561fbf0205654731b3659b2169d69cd35635cb382da16c3a3",
+  "original_cell_87.py": "4662acb6e6f7e41f8c4e0d7c7ff130bc5f4d7c7bf9b41190ad293ce898621db2",
+  "model_extracted.py": "4c4bf47dab5a3a602dc2a5e573fd6ec407419bfe501da36f9514ad47f14547f8",
+  "original_cell_85.py": "b8b78cb8995e3c7da7909e9dcdf51ce73fdcdbf918ee95431e53f81b425fc025",
+  "intervention_audit.json": "3e331904c88899700392a0c4a5cee2b39ebbc52bf872c78b99805967c1efa89c",
+  "README.md": "0e9aa960ce1225c19c9d060584229ecfe16ce7c9b3a91fdb8df7c81053999711",
+  "original_audit.json": "ccae06fb83258579dc19f7dd8265e1a42be0f8d3bd3bcbbffbbfcbfca985ef86",
+  "verify_decomposition.py": "1fa624a15f51c9f89d81e52538ed6dea029e048f77032bd16fe3b94029b013ce",
+  "validation_data.zip": "afbd396017a66d2deef8184d55586252a5ab83d105e46472b8fa9617efcc3f33",
+  "checkpoint_and_config.zip": "1543509e5303a87a6f8d48a40239afef8fbeda9131d8f18c831dcf7c6139c0d8",
+  "verify_original_sign_direction.py": "7768c7275be97251213133e7203ab3af66233d07e2a86bae526ecf1a4341958c",
+  "original_cell_83.py": "d57ccc4861ebd1f52704ffa6602cccd829ab82befb04295dc680c6f10154d754",
+  "original_sign_direction_audit.json": "44fff81f2eaa2bbbce43aeafa5ac23005536f7e140f46e90bbdbedd503a5e11c",
+  "validation_activations.npz": "aebbe6199a3f18be619fd7711025bb858248642fc71ccbb4f63170b5fc38e08f",
+  "source_notebook.ipynb": "258823f44d522b0e78aa5c094ef789b20695711c5ac02e518e8f81eacff794e9",
+  "verify.py": "8bc09b8532eb97cfd0400732207564120001c58e5df9ce1a5fca9b9660687c89",
+  "verify_interventions.py": "b1ca21be7d90c1f0454129853ce1cd9f77899098f62fff4986233318ae17ceac",
+  "geometry_audit.json": "635e98995fb3d76d1dbc935a08192501002897ff644ea1161246915963951943",
+  "verify_geometry.py": "577e5024cf2fc5e7fb9aed6b6dd4e29057eebec4b5e9c154c5cc68f4d357beeb"
+}
