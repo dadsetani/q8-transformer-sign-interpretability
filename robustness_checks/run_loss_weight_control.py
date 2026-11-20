@@ -9,7 +9,7 @@ import torch
 import torch.nn.functional as F
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0,str(HERE))
+sys.path.insert(0,str(HERE.parent))
 from model_extracted import HeadComparisonQ8Transformer
 
 ARCHIVE_HASH='bb1678db82f93282acd69d426fb46c348dd9ee5ec902ed8b77f87b2c3d2ada50'
