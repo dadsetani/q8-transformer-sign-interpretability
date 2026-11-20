@@ -2,12 +2,15 @@
 import io,json,zipfile
 from pathlib import Path
 import numpy as np, torch
-from model_extracted import HeadComparisonQ8Transformer
+import sys
 P=Path(__file__).resolve().parent
-with zipfile.ZipFile(P/'checkpoint_and_config.zip') as z:
+ROOT=P.parent
+sys.path.insert(0, str(ROOT))
+from model_extracted import HeadComparisonQ8Transformer
+with zipfile.ZipFile(ROOT/'checkpoint_and_config.zip') as z:
  ck=torch.load(io.BytesIO(z.read('conditional/best.pt')),map_location='cpu',weights_only=True)
 model=HeadComparisonQ8Transformer('conditional').eval();model.load_state_dict(ck['model_state_dict'],strict=True)
-with zipfile.ZipFile(P/'validation_data.zip') as z:
+with zipfile.ZipFile(ROOT/'validation_data.zip') as z:
  with np.load(io.BytesIO(z.read('q8_pilot_v1/validation.npz')),allow_pickle=False) as d:
   tokens=d['tokens'].copy();full=d['full_state'].copy();quot=d['quotient_state'].copy();pid=d['pair_id'].copy()
 N,L=tokens.shape
